@@ -6,9 +6,27 @@
     <title>我的第一个网站</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      h1 {
-        text-align: center;
-        color: #8a47ff;
+
+      h1
+      {
+        color: #870514;
+      }
+
+      @keyframes scaleIn {
+        0% {
+          transform: scale(3); 
+          opacity: 0; 
+        }
+        100% {
+          transform: scale(1); 
+          opacity: 1;
+        }
+      }
+      .welcome-text {
+        animation: scaleIn 2s ease-out; 
+        font-size: 3.2rem; 
+        text-align: center; 
+        margin-top: 20vh;
       }
       body {
         font-family: "Brush Script MT", cursive, sans-serif;
@@ -16,6 +34,7 @@
     </style>
   </head>
   <body>
+    <div class="welcome-text">
     <h1>欢迎来到我的网站</h1>
   </body>
 </html>
